@@ -1,9 +1,9 @@
-require_relative 'player'
-
 class BoardCase
-	attr_accessor :symbol
-
-	def initialize
-	@symbol = @player_token
+	attr_accessor :token, :case_id
+	
+	def initialize(case_id,token)
+		@token = token
+		@case_id = case_id
 	end
+	
 end
